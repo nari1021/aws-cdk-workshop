@@ -1,31 +1,19 @@
-# Level_00
+# Welcome to your CDK TypeScript project
 
-[AWS CDK v2](https://docs.aws.amazon.com/ko_kr/cdk/v2/guide/home.html) 공식 문서를 따라 초기 세팅 및 따라해보기
+This is a blank project for CDK development with TypeScript.
 
-## 1. AWS CDK v2 설치
+The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-- `aws-cdk` 를 global로 설치
+## Useful commands
 
-```shell
-npm install -g aws-cdk
-```
+- `npm run build` compile typescript to js
+- `npm run watch` watch for changes and compile
+- `npm run test` perform the jest unit tests
+- `cdk deploy` deploy this stack to your default AWS account/region
+- `cdk diff` compare deployed stack with current state
+- `cdk synth` emits the synthesized CloudFormation template
 
-- `aws-cdk` 설치 버전 확인
+## 폴더 구조
 
-```shell
-cdk --version
-```
-
-2.39.0 (build e36bfe5) 와 같이 버전이 출력됨.
-
-- 프로젝트 생성할 폴더 `cdk-workshop` 을 하나 만들어줌
-
-```shell
-mkdir cdk-workshop && cd cdk-workshop
-```
-
-- cdk init 으로 TypeScript CDK 프로젝트 초기 세팅
-
-```shell
-cdk init sample-app --language typescript
-```
+- bin/cdk-workshop.ts // CDK 응용 프로그램의 진입점. `lib/cdk-workshop-stack.ts` 정의된 스택을 로드함
+- lib/cdk-workshop-stack.ts // CDK 애플리케이션의 메인 스택이 정의되는 곳.
